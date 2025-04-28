@@ -61,7 +61,7 @@ terraform destroy
 
 ---
 
-# 🛠 Hướng dẫn cách test nhanh:
+# Hướng dẫn cách test nhanh:
 
 1. `terraform apply`
 2. Lấy Public IP của EC2 Public từ output hoặc AWS Console.
