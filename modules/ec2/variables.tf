@@ -28,10 +28,10 @@ variable "private_sg_id" {
   type        = string
 }
 
-variable "key_name" {
-  description = "Key pair name to access the instances."
-  type        = string
-}
+# variable "key_name" {
+#   description = "Key pair name to access the instances."
+#   type        = string
+# }
 
 variable "name_prefix" {
   description = "Prefix for naming resources."

@@ -42,3 +42,13 @@ module "security_group" {
   name_prefix = "cnmeow"
 }
 
+module "ec2" {
+  source             = "./modules/ec2"
+  ami_id             = "<AMI_Image>"
+  instance_type      = "t3.micro"
+  public_subnet_id   = module.subnet.public_subnet_id
+  private_subnet_id  = module.subnet.private_subnet_id
+  public_sg_id       = module.security_group.public_sg_id
+  private_sg_id      = module.security_group.private_sg_id
+  name_prefix        = "cnmeow"
+}
