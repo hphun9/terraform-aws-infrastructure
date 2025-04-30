@@ -10,7 +10,7 @@ module "subnet" {
   name_prefix         = "cnmeow"
   public_subnet_cidr  = "10.0.1.0/24"
   private_subnet_cidr = "10.0.2.0/24"
-  availability_zone   = "ap-southeast-1a"
+  availability_zone   = var.aws_region
 }
 
 module "internet_gateway" {
